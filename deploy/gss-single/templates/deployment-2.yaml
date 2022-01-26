@@ -21,7 +21,7 @@ spec:
       serviceAccountName: {{ .Values.github.knownHost | default "" | quote }}
       containers:
         - name: go-sample-site-2
-          image: "{{ .Values.image2.repository }}/go-sample-site-2:{{ .Values.image2.tag | default .Chart.AppVersion }}"
+          image: "{{ .Values.common.repository }}/go-sample-site-2:{{ .Values.image2.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.port2 }}

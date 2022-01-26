@@ -6,13 +6,14 @@ env: dev16
 
 ingressClassName: koderover-admin-nginx
 
+common:
+  repository: ccr.ccs.tencentyun.com/trial 
+
 image:
-  repository: ccr.ccs.tencentyun.com/trial
   name: go-sample-site
   pullPolicy: IfNotPresent
   tag: 0.1.0
 image2:
-  repository: ccr.ccs.tencentyun.com/trial
   name: go-sample-site-2
   pullPolicy: IfNotPresent
   tag: 0.3.0  
