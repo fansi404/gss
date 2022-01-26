@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  "{{ .Release.Name }}"
+  name:  "{{ .Release.Name }}-2"
   labels:
     {{- include "go-sample-site.labels" . | nindent 4 }}
 spec:
@@ -20,9 +20,9 @@ spec:
       {{- end }}
       serviceAccountName: {{ .Values.github.knownHost | default "" | quote }}
       containers:
-        - name: go-sample-site
+        - name: go-sample-site-2
 
-          image: "ccr.ccs.tencentyun.com/trial/go-sample-site:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          image: "ccr.ccs.tencentyun.com/trial/go-sample-site-2:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.port }}
