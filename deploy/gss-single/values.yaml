@@ -12,8 +12,8 @@ image:
   pullPolicy: IfNotPresent
   tag: 0.1.0
 image2:
-  repository: ccr.ccs.tencentyun.com/trial/go-sample-site-2
-  name: go-sample-site
+  repository: ccr.ccs.tencentyun.com/trial
+  name: go-sample-site-2
   pullPolicy: IfNotPresent
   tag: 0.3.0  
 
