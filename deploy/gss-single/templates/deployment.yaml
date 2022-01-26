@@ -22,7 +22,7 @@ spec:
       containers:
         - name: go-sample-site
 
-          image: "ccr.ccs.tencentyun.com/trial/go-sample-site:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          image: "{{ .Values.image.repository }}/go-sample-site:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.port }}
