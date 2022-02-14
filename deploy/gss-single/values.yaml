@@ -24,6 +24,14 @@ service:
   preset1: $T-Service$
   presetProjectName: $T-Project$
 
+global:
+  hub: ccr.ccs.tencentyun.com/trial 
+
+deploy:
+  image:
+    name: go-sample-site'
+    tag: 0.1.0 
+
 github:
   knownHost:
   sshKey:
