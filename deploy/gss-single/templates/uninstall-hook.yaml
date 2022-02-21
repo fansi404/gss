@@ -17,7 +17,7 @@ spec:
     spec:
       restartPolicy: Never
       containers:
-      - name: clear-data 
+      - name: clear-data
         image: "alpine:3.3"
-         command: ["exit","1"]
+        command: ["exit","1"]
 #        command: ["/bin/sleep","{{ default "20" .Values.sleepyTime }}"]
