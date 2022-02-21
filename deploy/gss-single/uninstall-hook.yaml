@@ -19,5 +19,5 @@ spec:
       containers:
       - name: clear-data 
         image: "alpine12334342:3.3"
-        # command: ["exit","1"]
-        command: ["/bin/sleep","{{ default "20" .Values.sleepyTime }}"]
+         command: ["exit","1"]
+#        command: ["/bin/sleep","{{ default "20" .Values.sleepyTime }}"]
