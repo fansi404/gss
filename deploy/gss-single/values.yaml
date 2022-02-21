@@ -27,3 +27,7 @@ service:
 parent:
   child1: 
     son: hello
+
+github:
+  knownHost:
+  sshKey:
