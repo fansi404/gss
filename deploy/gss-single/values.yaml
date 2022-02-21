@@ -27,12 +27,3 @@ service:
 parent:
   child1: 
     son: hello
-
-
-github:
-  knownHost:
-  sshKey:
-db.product.updateOne(
-   { "services.1.service_name": "gss-1" },
-   { $set: { "services.1.revsision" : 9 } }
-)
