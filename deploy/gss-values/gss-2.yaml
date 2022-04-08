@@ -29,6 +29,4 @@ service:
 
 mLines:
   first.yaml: |
-    ttt: ttt
-    bbb: bbb
-    xxx: xxx
+    ttt: test2
